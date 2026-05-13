@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://ckudr8chj1kgo"]
+
+[ext_resource type="Script" uid="uid://80kl10p8d3vr" path="res://player.gd" id="1_onrkg"]
+[ext_resource type="Texture2D" uid="uid://cdniwhn5ywg4h" path="res://MeiMeiAnime.webp" id="2_i3pqv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hqtel"]
+size = Vector2(645.625, 547.25)
+
+[node name="Player" type="CharacterBody2D" unique_id=344697292]
+position = Vector2(346, 113)
+script = ExtResource("1_onrkg")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1516781441]
+position = Vector2(-3.7812653, -7.843704)
+scale = Vector2(0.6221411, 0.5030279)
+texture = ExtResource("2_i3pqv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=565915813]
+position = Vector2(7.21875, 2.1562805)
+shape = SubResource("RectangleShape2D_hqtel")
