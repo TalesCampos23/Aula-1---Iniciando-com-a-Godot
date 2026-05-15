@@ -4,17 +4,20 @@
 [ext_resource type="Texture2D" uid="uid://cdniwhn5ywg4h" path="res://MeiMeiAnime.webp" id="2_i3pqv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hqtel"]
-size = Vector2(645.625, 547.25)
+size = Vector2(164.40625, 266.8125)
 
 [node name="Player" type="CharacterBody2D" unique_id=344697292]
-position = Vector2(346, 113)
+position = Vector2(584, 318)
 script = ExtResource("1_onrkg")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1516781441]
-position = Vector2(-3.7812653, -7.843704)
-scale = Vector2(0.6221411, 0.5030279)
+position = Vector2(22.000034, 92.000015)
+scale = Vector2(0.20189276, 0.16910425)
 texture = ExtResource("2_i3pqv")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=565915813]
-position = Vector2(7.21875, 2.1562805)
+position = Vector2(21, 91)
 shape = SubResource("RectangleShape2D_hqtel")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=318777205]
+position_smoothing_enabled = true
