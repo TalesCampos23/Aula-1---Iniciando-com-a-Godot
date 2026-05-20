@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://l1dhtqji1d6x"]
+
+[ext_resource type="Texture2D" uid="uid://h0wb088p0575" path="res://Assets/Base pack/Tiles/grass.png" id="1_bswci"]
+[ext_resource type="PackedScene" uid="uid://ckudr8chj1kgo" path="res://scenes/player.tscn" id="2_rus8k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3hls8"]
+size = Vector2(1153, 72)
+
+[node name="leve1" type="Node2D" unique_id=653830844]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=410666232]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=1713324153]
+position = Vector2(581, 615)
+scale = Vector2(16.4, 1)
+texture = ExtResource("1_bswci")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=292007493]
+position = Vector2(582.5, 615)
+shape = SubResource("RectangleShape2D_3hls8")
+
+[node name="Player" parent="StaticBody2D" unique_id=344697292 instance=ExtResource("2_rus8k")]
+position = Vector2(577, 325)
