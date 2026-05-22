@@ -80,12 +80,10 @@ position = Vector2(584, 318)
 script = ExtResource("1_onrkg")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=508401169]
-position = Vector2(29, 81)
 sprite_frames = SubResource("SpriteFrames_4ni07")
 animation = &"idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=565915813]
-position = Vector2(27.5, 84.5)
 shape = SubResource("RectangleShape2D_hqtel")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=318777205]

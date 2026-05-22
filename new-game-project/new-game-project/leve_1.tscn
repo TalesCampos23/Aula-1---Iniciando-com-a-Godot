@@ -1,10 +1,10 @@
-[gd_scene format=4 uid="uid://l1dhtqji1d6x"]
+[gd_scene format=3 uid="uid://dc3v1kabywbm3"]
 
-[ext_resource type="Texture2D" uid="uid://1d8a8wnt6262" path="res://Assets/Base pack/Tiles/tiles_spritesheet.png" id="2_bswci"]
-[ext_resource type="PackedScene" uid="uid://ckudr8chj1kgo" path="res://scenes/player.tscn" id="2_rus8k"]
+[ext_resource type="PackedScene" uid="uid://l1dhtqji1d6x" path="res://scenes/level_1.tscn" id="1_m8yve"]
+[ext_resource type="Texture2D" uid="uid://1d8a8wnt6262" path="res://Assets/Base pack/Tiles/tiles_spritesheet.png" id="2_isomg"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rus8k"]
-texture = ExtResource("2_bswci")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_467n8"]
+texture = ExtResource("2_isomg")
 separation = Vector2i(2, 2)
 texture_region_size = Vector2i(70, 70)
 0:0/0 = 0
@@ -411,7 +411,6 @@ texture_region_size = Vector2i(70, 70)
 5:8/0 = 0
 6:8/0 = 0
 7:8/0 = 0
-7:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-35, -35, 35, -35, 35, 35, -35, 35)
 13:8/0 = 0
 14:8/0 = 0
 15:8/0 = 0
@@ -2864,16 +2863,11 @@ texture_region_size = Vector2i(70, 70)
 53:57/0 = 0
 54:57/0 = 0
 
-[sub_resource type="TileSet" id="TileSet_5xbjy"]
+[sub_resource type="TileSet" id="TileSet_37p4n"]
 tile_size = Vector2i(70, 70)
-physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_rus8k")
+sources/0 = SubResource("TileSetAtlasSource_467n8")
 
-[node name="leve1" type="Node2D" unique_id=653830844]
+[node name="leve1" unique_id=653830844 instance=ExtResource("1_m8yve")]
 
-[node name="Player" parent="." unique_id=344697292 instance=ExtResource("2_rus8k")]
-position = Vector2(578, 327)
-
-[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1276580505]
-tile_map_data = PackedByteArray("AAAHAAYAAAAHAAgAAAAIAAYAAAAHAAgAAAAJAAYAAAAHAAgAAAAKAAYAAAAHAAgAAAALAAYAAAAHAAgAAAAGAAYAAAAHAAgAAAAFAAYAAAAHAAgAAAAEAAYAAAAHAAgAAAADAAYAAAAHAAgAAAACAAYAAAAHAAgAAAAAAAYAAAAHAAgAAAABAAYAAAAHAAgAAAAMAAYAAAAHAAgAAAANAAYAAAAHAAgAAAAOAAYAAAAHAAgAAAAPAAYAAAAHAAgAAAAQAAYAAAAHAAgAAAADAAQAAAAHAAgAAAACAAQAAAAHAAgAAAABAAQAAAAHAAgAAAAQAAQAAAAHAAgAAAARAAQAAAAHAAgAAAASAAQAAAAHAAgAAAAUAAMAAAAHAAgAAAAVAAMAAAAHAAgAAAAWAAMAAAAHAAgAAAAYAAIAAAAHAAgAAAAZAAIAAAAHAAgAAAAaAAIAAAAHAAgAAAA=")
-tile_set = SubResource("TileSet_5xbjy")
+[node name="TileMapLayer" type="TileMapLayer" parent="." index="1" unique_id=127979111]
+tile_set = SubResource("TileSet_37p4n")
